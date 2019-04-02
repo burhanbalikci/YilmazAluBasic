@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YilmazAlu - Ana Sayfa</title>
+    <link href="~/Content/Css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Css/Site.css" rel="stylesheet" />
+    <link href="~/Content/Css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top hareketlitop">
+        <div class="container">
+            <div class="topkismi">
+                <div class="yukarikoselogo col-lg-6">
+                    <a href="/Home/Index"><img src="~/Content/img/Logo.jpg" /></a>
+                </div>
+                <div class="yukarikoseiletisim col-lg-6">
+                    <div>
+                        <a href="~/Views/Home/Contact.cshtml">Telefon:</a><br />
+                        <span>0090 (216) 593 0882</span>
+                        <a href="/Home/Login"> Login </a>
+                    </div>
+                    <div>
+                        <a href="~/Views/Home/Contact.cshtml">Faks:</a><br />
+                        <span>0090 (216) 593 2272</span>
+                    </div>
+                    <div class="musterihzmtrsm">
+                        <img src="~/Content/img/5.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="top2kismialt">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav col-12 topul">
+                        <li class="col-2 liler" onmouseover="this.bgColor='orange'" onmouseout="this.bgColor='#93e54b'"><a href="/Home/Index" style="color:#000; padding:7px;">Ana Sayfa</a></li>
+                        <li class="col-2 liler">@Html.ActionLink("Kurumsal", "About", "Home", new { style = "color:#000; padding:7px;" })</li>
+                        <li class="col-2 liler">@Html.ActionLink("Hizmetler", "Services", "Home", new { style = "color:#000; padding:7px;" })</li>
+                        <li class="col-2 liler">@Html.ActionLink("Yeni Projeler", "NewProject", "Home", new { style = "color:#000; padding:7px;" })</li>
+                        <li class="col-2 liler">@Html.ActionLink("Referanslarımız", "References", "Home", new { style = "color:#000; padding:7px;" })</li>
+                        <li class="col-2 liler">@Html.ActionLink("İletişim", "Contact", "Home", new { style = "color:#000; padding:7px;" })</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*top bitiş*@
+
+    @*body başlangıç*@
+    <div class="container body-content bodyust">
+        @RenderBody()
+        <hr />
+        @*body bitiş*@
+
+        @*footer başlangıç*@
+        <footer class="ayak">
+            <p>&copy; @DateTime.Now.Year - <a href="/Home/Index">Yilmaz Çelik Aluminyum</a> Tüm Haklarını Saklı Tutar.</p>
+        </footer>
+    </div>
+    <script src="~/Content/Js/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/Js/jquery.validate-vsdoc.js"></script>
+    <script src="~/Content/Js/jquery.validate.min.js"></script>
+    <script src="~/Content/Js/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Content/Js/bootstrap.min.js"></script>
+    <script src="~/Content/Js/modernizr-2.8.3.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+﻿@model IEnumerable<YilmazAlu.BOL.Entities.Hizmet>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AluDograma)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OfisAraBol)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CehpheSistem)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SurguCamKapi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FotoselliKapi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KisBahce)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PanjurKepenk)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KupesteKorkuluk)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KatlanirCam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CamCephe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KompozitPanel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PVCDograma)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CamBalkon)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AluDograma)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OfisAraBol)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CehpheSistem)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SurguCamKapi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FotoselliKapi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KisBahce)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PanjurKepenk)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KupesteKorkuluk)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KatlanirCam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CamCephe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KompozitPanel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PVCDograma)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CamBalkon)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

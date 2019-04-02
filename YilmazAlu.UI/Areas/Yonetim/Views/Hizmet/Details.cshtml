@@ -1,0 +1,122 @@
+﻿@model YilmazAlu.BOL.Entities.Hizmet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Hizmet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AluDograma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AluDograma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OfisAraBol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfisAraBol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CehpheSistem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CehpheSistem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurguCamKapi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurguCamKapi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FotoselliKapi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FotoselliKapi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KisBahce)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KisBahce)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PanjurKepenk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PanjurKepenk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KupesteKorkuluk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KupesteKorkuluk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KatlanirCam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KatlanirCam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CamCephe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CamCephe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KompozitPanel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KompozitPanel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PVCDograma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PVCDograma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CamBalkon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CamBalkon)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

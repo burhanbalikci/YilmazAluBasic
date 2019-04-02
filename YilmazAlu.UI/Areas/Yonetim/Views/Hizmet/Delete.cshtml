@@ -1,0 +1,128 @@
+﻿@model YilmazAlu.BOL.Entities.Hizmet
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Hizmet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AluDograma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AluDograma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OfisAraBol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfisAraBol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CehpheSistem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CehpheSistem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurguCamKapi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurguCamKapi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FotoselliKapi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FotoselliKapi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KisBahce)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KisBahce)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PanjurKepenk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PanjurKepenk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KupesteKorkuluk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KupesteKorkuluk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KatlanirCam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KatlanirCam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CamCephe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CamCephe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KompozitPanel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KompozitPanel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PVCDograma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PVCDograma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CamBalkon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CamBalkon)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
