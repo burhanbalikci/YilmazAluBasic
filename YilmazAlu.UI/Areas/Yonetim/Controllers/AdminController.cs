@@ -11,7 +11,7 @@ using YilmazAlu.Repositories;
 
 namespace YilmazAluUI.Areas.Yonetim.Controllers
 {
-    
+
     public class AdminController : Controller
     {
         Repository<Admin> repoAdmin = new Repository<Admin>();
@@ -29,21 +29,21 @@ namespace YilmazAluUI.Areas.Yonetim.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Admin admin = repoAdmin.GetBy(i=> i.ID==id);
+            Admin admin = repoAdmin.GetBy(i => i.ID == id);
             if (admin == null)
             {
                 return HttpNotFound();
             }
             return View(admin);
         }
-        
+
         [Authorize(Roles = "admin")]
         public ActionResult Create()
         {
             return View();
         }
-        
-        [HttpPost,ValidateAntiForgeryToken,Authorize(Roles ="admin")]
+
+        [HttpPost, ValidateAntiForgeryToken, Authorize(Roles = "admin")]
         public ActionResult Create(Admin admin)
         {
             if (ModelState.IsValid)
@@ -67,8 +67,8 @@ namespace YilmazAluUI.Areas.Yonetim.Controllers
             }
             return View(admin);
         }
-        
-        [HttpPost,ValidateAntiForgeryToken, Authorize]
+
+        [HttpPost, ValidateAntiForgeryToken, Authorize]
         public ActionResult Edit(Admin admin)
         {
             if (ModelState.IsValid)
@@ -93,9 +93,7 @@ namespace YilmazAluUI.Areas.Yonetim.Controllers
             }
             return View(admin);
         }
-
-        // POST: Yonetim/Hizmet/Delete/5
-        [HttpPost, ActionName("Delete"),ValidateAntiForgeryToken,Authorize(Roles ="admin")]
+        [HttpPost, ActionName("Delete"), ValidateAntiForgeryToken, Authorize(Roles = "admin")]
         public ActionResult DeleteConfirmed(int id)
         {
             Admin admin = repoAdmin.GetBy(i => i.ID == id);

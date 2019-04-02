@@ -168,6 +168,10 @@
     <Content Include="Areas\Yonetim\Views\Hizmet\Details.cshtml" />
     <Content Include="Areas\Yonetim\Views\Hizmet\Edit.cshtml" />
     <Content Include="Areas\Yonetim\Views\Hizmet\Index.cshtml" />
+    <Content Include="Areas\Yonetim\Views\Admin\Create.cshtml" />
+    <Content Include="Areas\Yonetim\Views\Admin\Delete.cshtml" />
+    <Content Include="Areas\Yonetim\Views\Admin\Details.cshtml" />
+    <Content Include="Areas\Yonetim\Views\Admin\Edit.cshtml" />
     <None Include="Content\Js\jquery-3.3.1.intellisense.js" />
     <Content Include="Content\Js\jquery-3.3.1.js" />
     <Content Include="Content\Js\jquery-3.3.1.min.js" />

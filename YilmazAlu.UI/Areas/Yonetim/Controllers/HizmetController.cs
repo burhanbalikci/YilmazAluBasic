@@ -9,7 +9,7 @@ using System.Web.Mvc;
 using YilmazAlu.BOL.Entities;
 using YilmazAlu.Repositories;
 
-namespace YilmazAlu.UI.Areas.Yonetim.Controllers
+namespace YilmazAluUI.Areas.Yonetim.Controllers
 {
     public class HizmetController : Controller
     {
